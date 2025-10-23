@@ -1,7 +1,6 @@
 name: Workflow Demo
 
-on: 
-  push
+on: push
 
 env:
   ACCESS_ID: ${{ vars.ACCESS_ID }}
@@ -12,5 +11,4 @@ jobs:
 
     steps:
     - name: Echo ACCESS_ID
-
-      run: echo ${{ACCESS_ID}}
+      run: echo $ACCESS_ID
